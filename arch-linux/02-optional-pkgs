@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "Installing the following optional packages:"
+
+pkgs="archlinux-themes-sddm neofetch kate kcm-wacomtablet calibre gimp krita gscan2pdf pdfarranger moonshiner inkscape libreoffice-extension-languagetool mathpix-snipping-tool skypeforlinux-stable-bin ttf-ms-fonts electronic-wechat youtube-dl-gui-git zoom zotero spotify openboard"
+
+echo $pkgs
+
+yay -S $pkgs --noconfirm
+
+echo "Installation finished!"

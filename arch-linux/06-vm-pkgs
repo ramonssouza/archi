@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "Installing virtualbox ..."
+yay -S virtualbox linux54-virtualbox-host-modules virtualbox-ext-oracle icaclient --noconfirm
+sudo /sbin/rcvboxdrv setup
+sudo gpasswd -a $USER vboxusers
+
+
+echo "Installing crossover ..."
+yay -S lib32-libxcomposite lib32-libcups lib32-nss-mdns lib32-libxslt lib32-libxinerama lib32-fontconfig sane --noconfirm
+yay -S crossover --noconfirm
+
+echo "Installation finished."

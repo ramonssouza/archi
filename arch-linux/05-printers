@@ -1,0 +1,13 @@
+#!/bin/bash
+
+sudo usermod -a -G sys qiusheng
+
+echo "Installing printer drivers ..."
+
+pkgs="imagescan epson-inkjet-printer-201207w imagescan-plugin-networkscan"
+
+echo $pkgs
+
+yay -S $pkgs --noconfirm
+
+echo "Installation finished!"

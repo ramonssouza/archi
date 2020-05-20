@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "Installing the following GIS packages:"
+
+pkgs="python-owslib python-jinja-time python-pygments-markdown-lexer python-psycopg2 python-gdal python-numpy google-earth-pro qgis grass"
+
+echo $pkgs
+
+yay -S $pkgs --noconfirm
+
+echo "Installation finished!"
